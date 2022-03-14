@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+}
+
+* {
+  color: #242424;
+}
+
+.Layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.05fr 1fr;
+      grid-template-columns: 0.05fr 1fr;
+  height: 100vh;
+}
+
+.Navbar {
+  background-color: #292929;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.Navbar .Logo {
+  width: 80%;
+}
+
+.Navbar ul {
+  list-style: none;
+  padding: 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  width: 100%;
+}
+
+.Navbar ul li {
+  color: #e0e0e0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.Navbar ul li:hover {
+  background-color: orangered;
+}
+/*# sourceMappingURL=globals.css.map */

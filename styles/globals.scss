@@ -1,0 +1,42 @@
+$colorBackground: #e0e0e0;
+$colorBackgroundAlt: #292929;
+$colorText: #242424;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: $colorBackground;
+}
+
+* {
+    color: $colorText;
+}
+
+.Layout {
+    display: grid;
+    grid-template-columns: 0.05fr 1fr;
+    height: 100vh;
+}
+.Navbar {
+    background-color: $colorBackgroundAlt;
+    grid-column: 1/2;
+    .Logo {
+        width: 80%;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        grid-row: 1/5;
+        width: 100%;
+        li {
+            color: $colorBackground;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            &:hover {
+                background-color: orangered;
+            }
+        }
+    }
+}
